@@ -1,0 +1,15 @@
+<%= form_for(@tweet,url: twit_path) do |f| %>
+<% if @tweet.errors.any? %>
+<h2><%= @tweet.errors.count %>件のエラーがあります。</h2>
+<ul>
+<% @tweet.errors.full_messages.each do |msg| %>
+<li><%= msg %></li>
+<% end %>
+</ul>
+<% end %>
+  <%= f.label :content %>
+  <%= f.text_field :content %>
+  <br>
+  <%= f.submit 'tweet' %>
+<% end %>
+<%= link_to "戻る", twit_index_path %>
