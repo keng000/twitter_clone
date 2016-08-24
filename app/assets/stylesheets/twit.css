@@ -1,0 +1,21 @@
+header {
+  width: 100%;
+  background-color: #fffff;
+  height: 54px; }
+
+body {
+  margin: 0;
+  width: 100%;
+  background-color: #cceaf3; }
+
+.wrapper {
+  text-align: center; }
+  .wrapper .row {
+    border-bottom: 1px solid #ccc;
+    padding: 20px;
+    word-wrap: break-word; }
+
+input[type="submit"].btn-block {
+  margin: 15px 0; }
+
+/*# sourceMappingURL=twit.css.map */
