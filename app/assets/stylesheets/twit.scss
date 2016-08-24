@@ -13,13 +13,16 @@ body {
 .wrapper {
   margin: 0px auto 10px;
   padding: 20px 20px 20px 35px;
+  text-align: center;
   .row {
     border-bottom: 1px solid #ccc;
     padding: 20px;
-    text-align: left;
+    
     word-wrap: break-word;
   }
 }
+
 input[type="submit"].btn-block{
   margin: 15px 0;
 }
+

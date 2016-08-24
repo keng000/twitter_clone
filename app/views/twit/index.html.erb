@@ -1,14 +1,15 @@
 <div class="container">
-  <div class="wrapper col-md-8 col-md-offset-2 col-sm-10">
-<strong><%= notice %></strong>
-<h1>ツイート一覧</h1>
-<%= link_to "ツイートする", new_twit_path , class:'btn btn-default btn-info'%>
-<% @tweet.each do |twit| %>
-  <div class="row">
-    <p><%= twit.content %></p>
-    <%= link_to "編集する", edit_twit_path(twit.id), class:'btn btn-default btn-sm btn-success'%>
-    <%= link_to "削除する", twit_path(twit.id), method: :delete ,data: { confirm: '本当に削除していいですか？'}, class:'btn btn-default btn-sm btn-danger'%>
+      <div class="wrapper center-block col-md-8 col-sm-10 center-block">
+      <strong><%= notice %></strong>
+      <h1>ツイート一覧</h1>
+      <%= link_to "ツイートする", new_twit_path , class:'btn btn-default btn-info'%>
+      <% @tweet.each do |twit| %>
+      <div class="row">
+        <p><%= twit.content %></p>
+        <%= link_to "編集する", edit_twit_path(twit.id), class:'btn btn-default btn-sm btn-success'%>
+        <%= link_to "削除する", twit_path(twit.id), method: :delete ,data: { confirm: '本当に削除していいですか？'}, class:'btn btn-default btn-sm btn-danger'%>
+      </div>
+      <% end %>
   </div>
-<% end %>
-</div>
+  
 </div>
